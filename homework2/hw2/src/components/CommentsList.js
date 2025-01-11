@@ -2,7 +2,9 @@ import { useState } from 'react';
 
 function CommentList() {
     const [comment, setInputText] = useState("");
-    const [arr, setArr] = useState([]);
+    const [arr, setArr] = useState([{ ID: 1, text: "Это первый комментарий" },
+        { ID: 2, text: "Это второй комментарий" },
+        { ID: 3, text: "Это третий комментарий" }]);
     const [DeleteComment, setDeleteComment] = useState([]);
     const [id, setId] = useState(1);
 
